@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
+        <h1>SURPRISE!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo velit dicta nobis vel corporis! In minus corrupti molestias aut quas repellat deleniti obcaecati animi voluptates incidunt velit est exercitationem vero vitae, excepturi ducimus voluptatem sequi quo hic perspiciatis. Cupiditate optio assumenda earum quod. Cupiditate voluptates saepe accusamus architecto quis hic iusto, beatae aliquid voluptatem aspernatur ipsam ipsum quod sint delectus dicta dolorum fuga. Quisquam officia minima possimus magnam culpa doloremque odit veniam corporis! Debitis, aliquam dolor, tenetur dolore vel earum animi eum velit maiores impedit minima omnis excepturi alias porro, rem consectetur amet ex sint voluptatem ea! Deserunt, aliquid nulla dolor, vero sequi temporibus odit aut, perspiciatis ad ut fugiat quod iure explicabo eveniet cum autem odio. Repellat magni porro blanditiis necessitatibus quibusdam aliquid tenetur tempora eum libero eveniet, doloremque dolorum dolores accusantium, omnis voluptas ad quia quo iusto quae cum reiciendis quod rem minus. Possimus magni amet tempora perferendis beatae laudantium nulla quo, quaerat iste? Facilis, libero! Quam at dolor est! Et natus ipsam itaque labore, dolorum quae, odio, accusantium doloribus quos ducimus explicabo ea laboriosam distinctio eaque molestias ipsa sequi repellendus? Minima, quod commodi. Natus a voluptate, aut facilis cum eveniet nihil porro, quia similique tempora praesentium!</p>
+        <button class="btn">Click Here</button>
+
+        <div class="popup">
+            <h2>HAPPY BIRTHDAY!</h2>
+            <b class="close">x</b>
+        </div>
+    </section>
+    
+    <canvas id="my-canvas"></canvas>
+
+    <script src="index.min.js"></script>
+    
+
+    <script>
+        let btn = document.querySelector('.btn');
+        let popup = document.querySelector('.popup');
+        let close = document.querySelector('.close');
+        let confe = document.querySelector('#my-canvas');
+        btn.onclick = function(){
+            popup.classList.add('active');
+            confe.classList.add('active');
+
+        }
+        close.onclick = function(){
+            popup.classList.remove('active');
+            confe.classList.remove('active');
+        }
+
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+
+    </script>
     
 </body>
 </html>

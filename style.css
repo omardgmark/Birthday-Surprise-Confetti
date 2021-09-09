@@ -1,0 +1,82 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+h1{
+    font-size: 6em;
+    color: purple;
+    text-align: center;
+    text-shadow: 5px 5px 50px pink;
+}
+section{
+    position: relative;
+    padding: 60px;
+}
+section h2{
+    font-size: 8em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+    color: purple;
+    text-align: center;
+}
+section p{
+    font-size: 1.1em;
+}
+section button{
+    position: relative;
+    padding: 25px 45px;
+    margin-top: 30px;
+    margin-left: 790px;
+    font-size: 2.5em;
+    cursor: pointer;
+    border-radius: 20px;
+    color: whitesmoke;
+    box-shadow: 5px 5px 50px red;
+    background-image: linear-gradient(rgb(224, 63, 224), rgb(61, 4, 61))
+    
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: pink;
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px rgb(153, 16, 216), 0 0 0 1000px rgba(218, 200, 219, 0.842);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    visibility: hidden;
+}
+.popup.active{
+    visibility: visible;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #f00;
+    color: #fff;
+    cursor: pointer;
+}
+#my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000000;
+    visibility: hidden;
+    pointer-events: none;
+}
+#my-canvas.active{
+    visibility: visible;
+}
