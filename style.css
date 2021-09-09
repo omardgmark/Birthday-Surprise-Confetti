@@ -9,7 +9,7 @@ h1{
     font-size: 6em;
     color: purple;
     text-align: center;
-    text-shadow: 5px 5px 50px pink;
+    text-shadow: 5px 5px 50px red;
 }
 section{
     position: relative;
